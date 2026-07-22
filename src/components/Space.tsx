@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Sparkles } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 
@@ -39,22 +38,26 @@ export function Space() {
         <Reveal delay={0.1} y={20}>
           <div className="relative mx-auto max-w-sm lg:mx-0 lg:ml-auto">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card">
-              <Image
-                src="/images/recepcao-clinica.jpeg"
-                alt="Recepção da Clínica Renata Amaral Estética Avançada"
-                fill
-                sizes="(min-width: 1024px) 24rem, 90vw"
-                className="object-cover"
+              <video
+                src="/videos/recepcao-clinica.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                aria-label="Recepção da Clínica Renata Amaral Estética Avançada"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
             <div className="absolute -bottom-10 -left-8 w-32 shrink-0 overflow-hidden rounded-soft border-4 border-offwhite shadow-card sm:w-40">
               <div className="relative aspect-[3/4] w-full">
-                <Image
-                  src="/images/logo-parede-vertical.jpeg"
-                  alt="Identidade visual da Clínica Renata Amaral Estética Avançada"
-                  fill
-                  sizes="10rem"
-                  className="object-cover"
+                <video
+                  src="/videos/logo-parede.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  aria-label="Identidade visual da Clínica Renata Amaral Estética Avançada"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
             </div>
